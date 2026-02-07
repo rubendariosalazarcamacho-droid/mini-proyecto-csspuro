@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #0D1117;
+    --color-light:#FFFFFF;
+    --color-highlight:#E3FF6A;
+    --color-neon-green:#A4FF7A;
+    --color-deep-blue:#1E293B;
+    --color-soft-gray:#8892B0;
+
+    --gradient-main:linear-gradient(135deg, #1E293B 0%, #0D1117 100%);
+}
+
+body {
+    background: var(--color-dark);
+    color: var(--color-light);
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*====================================================================================================
+/*ESTILOS DEL HEADER*/
+nav {
+    padding: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+#logo {
+    height: 40px;
+    border-radius: 15px;     
+}
+
+#boton-contacto {
+    height: 50px;
+    width: 150px;
+    background-color: var(--color-neon-green);
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 100px;
+}
+
+nav li {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;       
+}
+
+nav a,
+nav a:focus,
+nav a:visited,
+nav a:active {
+    color: white;
+    text-decoration: none;
+}
+/*=======================================================================================================*/
+/*ESTILOS PARA LAS SECTION HERO*/
+#hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+    background: linear-gradient(to bottom, #0d1117, #284477);
+    height: 60%;
+}
+#hero h1 {
+     text-align: center;
+     font-size: 50px;
+}
+em {
+    color: #e5f49f;
+}
+
+#hero-elementos-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center    
+}
+
+#foto {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;  
+    
+}
+
+#mi-foto {
+    width: 50%;
+    margin-bottom: 0;
+}
+
+#hero-elementos-3 {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: 20;
+    background-color: #e4f688;
+    width: 300px; 
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 33px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+}
+
+#hero-elementos-3 a,
+#hero-elementos-3 a:visited,
+#hero-elementos-3 a:focus,
+#hero-elementos-3 a:active {
+    color:black;
+    text-decoration: none;
+          
+}
+
+/*=======================================================================================================================*/
+/*ESTILOS DE LA SECTION WHO AM I*/
+#section-who {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    gap: 30px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-who {    
+    width: 630px;
+    height: 75px;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;    
+}
+#section-who h2 {
+    color: #c8d97a;
+    font-size: 60px;
+    text-align: center; 
+}
+
+#section-who p {
+    color: #a7aab8;
+    font-size: 20px;
+}
+
+#section-who img {
+    width: 300px;
+    height: 300px;
+}
+
+#code {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 10px;
+    bottom: 100px;
+    transform: rotate(-35deg);
+}
+#frontend {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+    transform: rotate(35deg);
+}
+
+#show-proj {
+    background-color: #e4f688;;
+    width: 330px; 
+    height: 60px;
+    font-size: 35px;
+    border-radius: 30px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+}
+#show-proj a,
+#show-proj a:focus,
+#show-proj a:visited,
+#show-proj a:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*================================================================================================================*/
+/*estilo de la seccion skills, aplicamos grid*/
+#contenedor-skills {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    gap: 20px;    
+}
+
+#contenedor-skills h2 {
+    color: #c8d97a;
+    font-size: 70px;    
+}
+
+#contenedor-grid {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 20px;    
+}
+
+#contenedor-grid img {
+    height: 135px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.bg-grid {
+    background-color: #1d2236;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Additional {
+    display: flex;
+    flex-direction: column ;
+    width: 100%;
+    height: 30%;
+    color: #c8d97a;
+    font-size: 40px;
+    gap: 30px;
+    padding: 30px ;
+    box-shadow: inset 0 0 10px rgba(207, 211, 227, 0.895);
+}
+
+#Additional-iconos {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#Additional-iconos img {
+    height: 135px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+#item-html {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    box-shadow: inset 0 0 10px rgba(207, 211, 227, 0.895);    
+}
+#item-css {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    box-shadow: inset 0 0 10px rgba(207, 211, 227, 0.895);
+}
+#item-js {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    box-shadow: inset 0 0 10px rgba(207, 211, 227, 0.895);
+}
+#item-react {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    box-shadow: inset 0 0 10px rgba(207, 211, 227, 0.895);
+}
+#item-node {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    box-shadow: inset 0 0 10px rgba(207, 211, 227, 0.895);
+}
+#item-mysql {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    box-shadow: inset 0 0 10px rgba(207, 211, 227, 0.895);
+}
+#item-Experience {
+    grid-column: 4/6;
+    grid-row: 1/3;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    gap: 25px;
+    box-shadow: inset 0 0 10px rgba(207, 211, 227, 0.895);
+}
+
+#item-Experience h2 {
+    font-size: 200px;
+    color: #95bfda;
+}
+#item-Experience p {
+    font-size: 40px;
+    color: #95bfda;
+    text-align: center;   
+}
+
+#Descargar {
+    background-color: #e4f688;;
+    width: 250px; 
+    height: 60px;
+    font-size: 35px;
+    border-radius: 30px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+    margin-bottom: 60px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*ESTILO DE LA SECTION PROYECTOS DESTACADOS*/
+/*CONTENEDOR DE LA SECTION PROYECTOS*/
+#contenedor-proyectos {
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    gap: 40px;
+}    
+/*CONTENEDOR DE LA DESCRIPCION DE PROYECTOS*/
+#descripcion-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%; 
+    height: 80%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: space-between;   
+}
+#descripcion-proyectos h2 {
+    font-size: 60px;
+}
+#descripcion-proyectos p {
+    font-size: 20px;
+    width: 60%;
+}
+#ver-pro {
+    background-color: #e4f688;;
+    width: 450px; 
+    height: 60px;
+    font-size: 35px;
+    border-radius: 30px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+
+/*CONTENEDOR DE LAS IMAGENES O VISTAS DE LOS PROYECTOS*/
+#img-proyectos {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 80%;
+    gap: 10px;
+    margin-right:10px;    
+}
+
+#img-proyectos img {
+    height: 100%;
+    border-radius: 20px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;       
+}
+
+#img-proyectos div {
+    overflow: hidden;
+    border-radius: 20px;
+}
+#destacado {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 45%;
+}
+#destacado2 {
+    width: 25%;
+}
+#destacado3 {
+    width: 25%;
+}
+/*---------------------------------------------------------------------------------------*/
+/* ESTILO PARA EL FORMULARIO DE CONTACTO*/
+#section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px; ;
+
+}
+#formulario {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 35px;
+    width: 40%;
+    height: 80%;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#formulario h2 {
+    color: #060818;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    
+}
+.input-name {
+    background-color: #e3e3e3;
+    height: 60px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 20px ;
+}
+.input-email {
+    background-color: #e3e3e3;
+    height: 60px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 20px ;
+}
+textarea {
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 20px ;
+}
+
+#chat {
+    color: #060818;
+    height: 60px;
+    border-radius: 30px;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #e4f688;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+

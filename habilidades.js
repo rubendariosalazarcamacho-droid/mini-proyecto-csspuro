@@ -57,3 +57,49 @@ const mostrarHabilidades = (listaObjetos) => {
 
 mostrarHabilidades(habilidades)
 
+//////////////////////////////////////////////////////////////////////////////////
+// AQUI IMPLEMENTO EL PUNTO 2 DEL MP EL BOTON CON TOGGLE
+
+const botonMostrar = document.querySelector ("#botonOculto")
+const menuOculto = document.querySelector ("#menuOculto")
+
+console.log(menuOculto)
+
+botonMostrar.addEventListener ("click", 
+    function mostrarProyectos (){
+        menuOculto.classList.toggle("mostrarMenu")
+    }
+)
+
+
+//////////////////////////////////////////////////////////////////////////////////
+// aqui implemento el envío del formulario
+
+const inputNombre = document.querySelector ("#inputNombre")
+const inputEmail = document.querySelector ("#inputEmail")
+const inputTextArea = document.querySelector ("#inputTextArea")
+const chat = document.querySelector ("#chat")
+
+
+chat.addEventListener ("click", function (){
+    let nombre= inputNombre.value.trim();
+    let email= inputEmail.value.trim();
+    let mensaje= inputTextArea.value.trim();
+
+    if (nombre==="" || email==="" || mensaje==="" ){
+        alert("Debe ingresar todos los campos:")
+        
+    }else{
+        let miEmail= "rubendariosalazarcamacho@gmail.com"
+        const asunto = encodeURIComponent(`Mensaje de ${nombre}`);
+        const cuerpo = encodeURIComponent(`Email: ${email}\n\nMensaje: ${mensaje}`);
+        window.location.href = `mailto:${miEmail}?subject=${asunto}&body=${cuerpo}`;
+
+        
+    }
+
+})
+
+
+
+ 

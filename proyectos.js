@@ -40,3 +40,4 @@ const mostrarProyectos = (listaProyectos) => {
 }
 
 mostrarProyectos(proyectos)
+

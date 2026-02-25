@@ -20,6 +20,18 @@
                 <li><a href="proyectos.html">Projects</a></li>
             </ul>
             <button id="boton-contacto"><a href="#section-form">Contacto</a></button>
+            
+            <div id="contenedorBotonYMenuOculto">
+                <button id="botonOculto">Menú</button>
+                
+                <div id="menuOculto" class="menuOculto">
+                  
+                  <a href="#contenedor-skills">Skills</a>
+                  <a href="proyectos.html">Projects</a>
+                  <a href="#section-form">Contacto</a>
+                </div>
+            </div>
+           
         </nav>
     </header>
     <section id="hero">
@@ -61,7 +73,7 @@
 
 
     </section>
-
+<!--SECCION SKILLS////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <section id="contenedor-skills">
         <div>
             <h2>My Skills</h2>
@@ -90,7 +102,8 @@
         </div>
 
     </section>
-
+    
+<!--SECCION PROYECTOS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <section id="contenedor-proyectos">
         <div id="descripcion-proyectos">
             <h2>Featured <br> Projects</h2>
@@ -110,11 +123,11 @@
 
         <form id="formulario" action="">
             <h2>Start a Conversation</h2>
-            <input type="text" class="input-name" placeholder="Your Name">
-            <input type="email" class="input-email" placeholder="Email Address">
-            <textarea placeholder="Chat Here"></textarea>
+            <input id="inputNombre" type="text" class="input-name" placeholder="Your Name">
+            <input id="inputEmail" type="email" class="input-email" placeholder="Email Address" required>
+            <textarea id="inputTextArea" placeholder="Chat Here"></textarea>
 
-            <button id="chat">Submit Here</button>
+            <button id="chat" type="button">Submit Here</button>
 
         </form>
     </section>
